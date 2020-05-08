@@ -1,7 +1,7 @@
 # rqt_virtual_joystick
 Simple rqt virtual joystick publish `sensor_msgs/Joy` message.
 
-<img src="https://raw.githubusercontent.com/aquahika/rqt_virtual_joystick/master/screenshot/window.png">
+<img src="https://raw.githubusercontent.com/aquahika/rqt_virtual_joystick/melodic-devel/screenshot/window.png">
 
 ## Usage
 
