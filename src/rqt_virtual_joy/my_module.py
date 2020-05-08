@@ -3,9 +3,6 @@ import rospy
 import rospkg
 from sensor_msgs.msg import Joy
 
-import pprint
-
-
 from qt_gui.plugin import Plugin
 from python_qt_binding import loadUi
 from python_qt_binding.QtWidgets import QWidget,QGraphicsView
@@ -54,7 +51,7 @@ class MyPlugin(Plugin):
         # Create QWidget
         self._widget = QWidget()
         # Get path to UI file which should be in the "resource" folder of this package
-        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_virtual_joy'), 'resource', 'MyPlugin.ui')
+        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_virtual_joy'), 'resource', 'VirtualJoy.ui')
         # Extend the widget with all attributes and children from UI file
         loadUi(ui_file, self._widget)
         # Give QObjects reasonable names
