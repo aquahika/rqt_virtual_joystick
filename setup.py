@@ -8,4 +8,4 @@ d = generate_distutils_setup(
     package_dir={'': 'src'},
 )
 
-setup(**d)git reset --hard HEAD^
+setup(**d)
