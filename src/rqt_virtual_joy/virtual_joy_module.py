@@ -148,6 +148,15 @@ class MyPlugin(Plugin):
         msg.header.stamp = rospy.Time.now()
         msg.axes.append(float(joy['x']))
         msg.axes.append(float(joy['y']))
+
+        button_num = 1
+        while True:
+            try:
+                msg.buttons.append(eval("self._widget.button"+str(button_num)).isDown())
+                button_num+=1
+            except:
+                break
+
         try:
             self.pub.publish(msg)
         except:
@@ -165,6 +174,7 @@ class MyPlugin(Plugin):
 
     def shutdown_plugin(self):
         # TODO unregister all publishers here
+        self.pub.unregister()
         pass
 
     def save_settings(self, plugin_settings, instance_settings):
