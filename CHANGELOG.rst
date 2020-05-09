@@ -2,8 +2,8 @@
 Changelog for package rqt_virtual_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.2 (2020-05-09)
+------------------
 
 * First Release
 * Contributors: Hikaru Sugiura
