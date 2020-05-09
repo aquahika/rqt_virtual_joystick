@@ -17,6 +17,9 @@
 
   <author email="hikaru.sugiura@whill.inc">Hikaru Sugiura</author>
 
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rospy</build_depend>
   <build_depend>rqt_gui</build_depend>
