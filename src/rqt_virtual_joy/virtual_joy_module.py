@@ -164,7 +164,8 @@ class MyPlugin(Plugin):
             pass
 
     def getROSJoyValue(self):
-        return self.convertREPCoordinate(self._widget.joy.getJoyValue())
+        return self._widget.joy.getJoyValue()
+        #return self.convertREPCoordinate(self._widget.joy.getJoyValue())
 
     def convertREPCoordinate(self,input):
         output = {}
