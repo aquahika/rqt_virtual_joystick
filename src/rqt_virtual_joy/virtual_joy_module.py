@@ -45,8 +45,8 @@ class MyPlugin(Plugin):
 
         args, unknowns = parser.parse_known_args(context.argv())
         if not args.quiet:
-            print 'arguments: ', args
-            print 'unknowns: ', unknowns
+            print ('arguments: ', args)
+            print ('unknowns: ', unknowns)
 
         # Create QWidget
         self._widget = QWidget()
